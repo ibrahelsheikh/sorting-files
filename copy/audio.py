@@ -21,5 +21,5 @@ for file in files:
         '.snd') or file.endswith('.ape') or file.endswith('.dsf') or file.endswith('.dff') or file.endswith(
         '.mpc'):
         shutil.copy(src_dir + '/' + file, dst_dir)
+        print(f"{file} copied")
 
-        print(file + ' copied')

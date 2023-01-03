@@ -17,4 +17,5 @@ for file in files:
                        '.kt', '.rs', '.dart', '.hs', '.erl', '.exs', '.fs', '.ml', '.fsx', '.vb', '.clj']:
         shutil.copy(file, dst_dir)
 
-        print(file.name + ' copied')
+        print(f"{file} copied")
+

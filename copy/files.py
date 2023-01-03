@@ -16,5 +16,5 @@ files = os.listdir(src_dir)
 for file in files:
     if file.endswith('.txt') or file.endswith('.pdf'):
         shutil.copy(src_dir + '/' + file, dst_dir)
+        print(f"{file} copied")
 
-        print(file + ' copied')

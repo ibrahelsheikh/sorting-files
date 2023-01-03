@@ -2,7 +2,7 @@ import shutil
 from pathlib import Path
 
 # Define the source and destination directories for the photos
-src_dir = Path("D:\\Ibrahim\\mohamed phone\\DCIM\\Camera")
+src_dir = Path("D:\\Ibrahim\\mohamed phone\\DCIM")
 dst_dir = src_dir / 'photos'
 
 # Create the destination directory if it doesn't exist
@@ -15,5 +15,5 @@ files = src_dir.glob('*')
 for file in files:
     if file.suffix in ['.jpg', '.png', '.gif', '.jpeg', '.bmp', '.tif', '.tiff', '.svg', '.webp', '.ico']:
         shutil.copy(file, dst_dir)
+        print(f"{file} copied")
 
-        print(file.name + ' copied')
