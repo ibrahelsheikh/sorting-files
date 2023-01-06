@@ -12,7 +12,7 @@ if not os.path.exists(dst_dir):
 # Get a list of all the files in the source directory
 files = os.listdir(src_dir)
 
-# Iterate through the list of files and copy each file to the destination directory
+# Iterate through the list of files and copy_module each file to the destination directory
 for file in files:
     if file.endswith('.mp3') or file.endswith('.aac') or file.endswith('.flac') or file.endswith('.ogg') or file.endswith(
             '.wav') or file.endswith('.m4a') or file.endswith('.wma') or file.endswith('.m4b') or file.endswith(
