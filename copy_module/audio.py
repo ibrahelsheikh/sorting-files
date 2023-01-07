@@ -22,4 +22,3 @@ for file in files:
         '.mpc'):
         shutil.copy(src_dir + '/' + file, dst_dir)
         print(f"{file} copied")
-
