@@ -2,7 +2,7 @@ import os
 import shutil
 
 # Define the source and destination directories for the files
-src_dir = "D:\\Ibrahim\\mohamed phone\\DCIM\\Camera"
+src_dir = "D:\_Projects\Downloads"
 dst_dir = src_dir + '\\files'
 
 # Create the destination directory if it doesn't exist
