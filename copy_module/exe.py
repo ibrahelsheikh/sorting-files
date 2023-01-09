@@ -13,6 +13,6 @@ files = src_dir.glob('*')
 
 # Iterate through the list of files and copy_module each file to the destination directory
 for file in files:
-    if file.suffix in ['.jpg', '.png', '.gif', '.jpeg', '.bmp', '.tif', '.tiff', '.svg', '.webp', '.ico']:
+    if file.suffix in ['.exe','.msi', '.zip']:
         shutil.copy(file, dst_dir)
         print(f"{file} copied")
