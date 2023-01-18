@@ -2,7 +2,7 @@ import shutil
 from pathlib import Path
 
 
-def copy_videos(src):
+def copy_video(src):
     # Define the source and destination directories for the photos
     src_dir = Path(src)
     dst_dir = src_dir / 'videos'
