@@ -1,7 +1,8 @@
-from copy_module import files , audio , video , photos ,compressed , progranming_files
+from copy_module import files, audio, video, photos, compressed, progranming_files
 import threading
 
-def copy (path):
+
+def copy(path):
     t1 = threading.Thread(files.copy_files(path))
     t2 = threading.Thread(audio.copy_audio(path))
     t3 = threading.Thread(video.copy_video(path))
@@ -27,4 +28,4 @@ def copy (path):
 
 
 if __name__ == '__main__':
-    copy ("D:\_Projects\Downloads")
+    copy(r"____ your path ____")
