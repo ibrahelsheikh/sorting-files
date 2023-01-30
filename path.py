@@ -30,4 +30,4 @@ def copy(path):
 
 
 if __name__ == '__main__':
-    copy(Path(input("Enter the path of the directory: ")).as_posix())
+    copy(r"____ your path ____")
