@@ -13,7 +13,7 @@ def copy_photos(src):
     # Get a list of all the files in the source directory
     files = src_dir.glob('*')
 
-    # Iterate through the list of files and copy_module each file to the destination directory
+    # Iterate through the list of files and copy_package each file to the destination directory
     for file in files:
         if file.suffix in ['.jpg', '.png', '.gif', '.jpeg', '.bmp', '.tif', '.tiff', '.svg', '.webp', '.ico']:
             shutil.copy(file, dst_dir)

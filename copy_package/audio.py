@@ -13,7 +13,7 @@ def copy_audio(src):
     # Get a list of all the files in the source directory
     files = src_dir.glob('*')
 
-    # Iterate through the list of files and copy_module each file to the destination directory
+    # Iterate through the list of files and copy_package each file to the destination directory
     for file in files:
         if file.suffix in ['.mp3', '.wav', '.aiff', '.aif', '.aifc', '.aac', '.flac', '.m4a', '.ogg', '.wma', '.wv',
                            '.ape', '.alac', '.opus', '.tta', '.ac3', '.dts', '.amr', '.awb', '.mka', '.mpc', '.mpp',

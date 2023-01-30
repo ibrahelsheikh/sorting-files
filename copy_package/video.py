@@ -13,7 +13,7 @@ def copy_video(src):
     # Get a list of all the files in the source directory
     files = src_dir.glob('*')
 
-    # Iterate through the list of files and copy_module each file to the destination directory
+    # Iterate through the list of files and copy_package each file to the destination directory
     for file in files:
         # video files
         if file.suffix in ['.mp4', '.avi', '.mkv', '.flv', '.wmv', '.mov', '.mpg', '.mpeg', '.3gp', '.3g2', '.m4v',
