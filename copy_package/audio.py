@@ -7,6 +7,9 @@ def copy_audio(src):
     src_dir = Path(src)
     dst_dir = src_dir/'audio'
 
+    # Create the destination directory if it doesn't exist
+    dst_dir.mkdir(exist_ok=True)
+
     # Get a list of all the files in the source directory
     files = src_dir.glob('*')
 
@@ -16,8 +19,6 @@ def copy_audio(src):
                            '.ape', '.alac', '.opus', '.tta', '.ac3', '.dts', '.amr', '.awb', '.mka', '.mpc', '.mpp',
                            '.ofr', '.ofs', '.spx', '.tak', '.wv', '.w64', '.w65', '.wv']:
 
-            # Create the destination directory if it doesn't exist
-            dst_dir.mkdir(exist_ok=True)
 
             shutil.copy(src_dir / file, dst_dir)
             print(f"{file} copied")
