@@ -17,6 +17,5 @@ def copy_files(src):
     for file in files:
         if file.suffix in ['.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.odt', '.odp', '.ods', '.odg',
                            '.odf', '.txt', '.rtf', '.tex', '.wks', '.wps', '.wpd', '.csv']:
-
             shutil.copy(file, dst_dir)
             print(f"{file} copied")

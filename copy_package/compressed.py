@@ -17,7 +17,5 @@ def copy_compressed(src):
     for file in files:
         if file.suffix in ['.exe', '.msi', '.zip', '.rar', '.7z', '.tar', '.gz', '.bz2', '.iso', '.jar', '.war', '.apk',
                            '.deb', '.rpm']:
-
-
             shutil.copy(file, dst_dir)
             print(f"{file} copied")

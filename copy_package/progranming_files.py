@@ -17,7 +17,5 @@ def copy_programming_files(src):
     for file in files:
         if file.suffix in ['.py', '.c', '.cpp', '.java', '.js', '.php', '.rb', '.swift', '.go', '.pl', '.cs', '.scala',
                            '.kt', '.rs', '.dart', '.hs', '.erl', '.exs', '.fs', '.ml', '.fsx', '.vb', '.clj']:
-
-
             shutil.copy(file, dst_dir)
             print(f"{file} copied")
